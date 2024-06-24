@@ -1,13 +1,12 @@
-title: Leaf Blog
-iconURL: assets/default-icon.png
+title: Spore studio
+iconURL: assets/logo-tran-pos.png
 theme: jekyll-theme-leaf
 
 # for a clean URL
 permalink: :slug
 
 social:
-  twitter: _SupunKavinda
-  github: SupunKavinda
+  github: sporestudio
 
 plugins:
  - jekyll-feed
