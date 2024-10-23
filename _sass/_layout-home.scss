@@ -1,20 +1,29 @@
 .home-box {
-    padding:0;
-    overflow:hidden;
+    padding: 0;
+    overflow: hidden;
+
+    .post-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px; /* Espacio antes de la línea */
+        border-bottom: 3px solid $header-color; /* Línea divisoria completa */
+        //margin-bottom: 100px; /* Espacio entre proyectos */
+    }
+
     .post-link {
         color: inherit;
-        display:block;
+        display: block;
         padding: $spacing-unit;
         transition: .3s background-color;
-        &:not(:last-child) {
-            border-bottom:1px solid $header-color;
-        }
+
         &:hover {
             text-decoration: none;
             background-color: $header-color;
         }
+
         h3 {
-            margin:0;
+            margin: 0;
         }
     }
 }

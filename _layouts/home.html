@@ -8,21 +8,51 @@ layout: default
 
   {% assign posts = site.posts %}
 
-
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <div class="box home-box">
+    
+    <div class="box home-box" style="padding-right: 20px;"> 
       <div class="post-list">
         {%- for post in posts -%}
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            <h3>{{ post.title | escape }}</h3>
-          </a>
+        <div class="post-item" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              <h3>{{ post.title | escape }}</h3>
+              {%- if post.excerpt -%} 
+                <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
+              {%- endif -%}
+            </a>
+          </div>
+          <!-- Condicionales para mostrar íconos diferentes por proyecto -->
+          <div class="project-logos" style="display: flex; align-items: center; gap: 0px;">
+            {%- if post.title contains "Cluster Kubernetes - IaC" -%}
+              <img src="{{ '/assets/aws-icon.png' | relative_url }}" alt="AWS logo" style="width: 40px; height: auto;">
+              <img src="{{ '/assets/monitor-icon.png' | relative_url }}" alt="Terraform logo" style="width: 60px; height: auto;">
+              <img src="{{ '/assets/kubernetes-icon.png' | relative_url }}" alt="Kubernetes logo" style="width: 50px; height: auto;">
+            {%- elsif post.title contains "Test Automation Python" -%}
+              <img src="{{ '/assets/python-icon.png' | relative_url }}" alt="Python logo" style="width: 40px; height: auto;">
+              <img src="{{ '/assets/selenium-icon.png' | relative_url }}" alt="Selenium logo" style="width: 40px; height: auto;">
+            {%- elsif post.title contains "Data Lake On Azure" -%}
+              <img src="{{ '/assets/azure-icon.png' | relative_url }}" alt="Azure logo" style="width: 80px; height: auto;">
+              <img src="{{ '/assets/databricks-icon.png' | relative_url }}" alt="Data Lake logo" style="width: 35px; height: auto;">
+            {%- elsif post.title contains "FaaS Service" -%}
+              <img src="{{ '/assets/nodejs-icon.png' | relative_url }}" alt="FaaS logo" style="width: 30px; height: auto;">  
+              <img src="{{ '/assets/micro-icon.png' | relative_url }}" alt="Serverless logo" style="width: 50px; height: auto;">
+              <img src="{{ '/assets/api-icon.png' | relative_url }}" alt="Serverless logo" style="width: 50px; height: auto;">
+            {%- elsif post.title contains "Web Automation" -%}
+              <img src="{{ '/assets/gradle-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;">
+            {%- else -%}
+              <!-- Íconos por defecto si no coincide con ningún proyecto específico -->
+              <img src="{{ '/assets/default-icon.png' | relative_url }}" alt="Default logo" style="width: 40px; height: auto;">
+            {%- endif -%}
+          </div>
+        </div>
         {%- endfor -%}
       </div>
     </div>
-
   {%- endif -%}
 
 </div>
