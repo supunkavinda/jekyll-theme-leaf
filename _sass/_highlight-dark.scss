@@ -57,9 +57,14 @@ $text-color:            $sol-mono01 !default;
 $background-color:      $sol-mono3 !default;
 $code-background-color: $sol-mono2 !default;
 
-$link-base-color:       $sol-blue !default;
+//$link-base-color:       $sol-blue !default;
+$link-base-color: #ffffff !default;
 $link-visited-color:    mix($sol-blue, $sol-mono00) !default;
 
+
+header a {
+  color: #ffffff !important;
+}
 $table-text-color:      $sol-mono00 !default;
 $table-zebra-color:     mix($sol-mono2, $sol-mono3) !default;
 $table-header-bg-color: $sol-mono2 !default;
