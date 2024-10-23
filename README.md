@@ -78,14 +78,14 @@ Leaf Jekyll theme uses two plugins by default.
 Here's the basic `_config.yml` file of this plugin.
 
 ```yaml
-title: Leaf Blog
+title: Juan Camilo
 iconURL: assets/default-icon.png
 theme: jekyll-theme-leaf
 
 permalink: :slug
 
 social:
-  twitter: YOUR_TWITTER
+  linkedin: YOUR_TWITTER
   github: YOUR_GITHUB
 
 plugins:

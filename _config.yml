@@ -1,13 +1,13 @@
-title: Leaf Blog
-iconURL: assets/default-icon.png
+title: Juan's Portfolio
+iconURL: assets/image.png
 #theme: jekyll-theme-leaf
 
 # for a clean URL
 permalink: :slug
 
 social:
-  twitter: _SupunKavinda
-  github: SupunKavinda
+  linkedin: juan-camilo-jojoa-sanchez-956212116/
+  github: juanjjs
 
 plugins:
  - jekyll-feed
