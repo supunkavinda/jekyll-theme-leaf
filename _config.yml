@@ -1,5 +1,6 @@
 title: Juan's Portfolio
-iconURL: assets/image.png
+#iconURL: assets/image.png
+gifURL: assets/icons.gif
 #theme: jekyll-theme-leaf
 
 # for a clean URL
