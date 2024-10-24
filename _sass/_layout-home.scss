@@ -1,3 +1,16 @@
+.home {
+    .main-title {
+      text-align: center;
+      font-size: 2em;
+      color: white;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+      margin-bottom: 10px;
+      backdrop-filter: blur(5px); /* Efecto de desenfoque */
+      border-radius: 40px; /* Bordes redondeados */
+    }
+  }  
+
 .home-box {
     padding: 0;
     overflow: hidden;
@@ -14,6 +27,7 @@
     .post-link {
         color: inherit;
         display: block;
+        border-radius: 40px;
         padding: $spacing-unit;
         transition: .3s background-color;
 
@@ -27,3 +41,4 @@
         }
     }
 }
+
