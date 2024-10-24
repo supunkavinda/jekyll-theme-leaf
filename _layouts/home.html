@@ -47,6 +47,12 @@ layout: default
             {%- elsif post.title contains "Web Automation" -%}
               <img src="{{ '/assets/gradle-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
               <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;">
+            {%- elsif post.title contains "Data Lake On AWS" -%}
+              <img src="{{ '/assets/aws-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              <!-- <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;"> -->
+            {%- elsif post.title contains "Using Paessler PRTG to Monitor Servers" -%}
+              <img src="{{ '/assets/image.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              <!-- <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;"> -->
             {%- else -%}
               <!-- Íconos por defecto si no coincide con ningún proyecto específico -->
               <img src="{{ '/assets/default-icon.png' | relative_url }}" alt="Default logo" style="width: 40px; height: auto;">
