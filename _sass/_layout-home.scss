@@ -11,6 +11,15 @@
     }
   }  
 
+.sub-title {
+    font-size: 15px; /* Tamaño de letra del h2 más pequeño */
+    text-align: center;
+    color: white;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+  }
+
+
 .home-box {
     padding: 0;
     overflow: hidden;
