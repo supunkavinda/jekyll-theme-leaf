@@ -35,25 +35,31 @@ layout: default
               <img src="{{ '/assets/monitor-icon.png' | relative_url }}" alt="Terraform logo" style="width: 60px; height: auto;">
               <img src="{{ '/assets/kubernetes-icon.png' | relative_url }}" alt="Kubernetes logo" style="width: 50px; height: auto;">
             {%- elsif post.title contains "Test Automation Python" -%}
-              <img src="{{ '/assets/python-icon.png' | relative_url }}" alt="Python logo" style="width: 40px; height: auto;">
+              <img src="{{ '/assets/python-icon.png' | relative_url }}" alt="Python logo" style="width: 40px; height: auto;margin-right: 20px;">
               <img src="{{ '/assets/selenium-icon.png' | relative_url }}" alt="Selenium logo" style="width: 40px; height: auto;">
             {%- elsif post.title contains "Data Lake On Azure" -%}
               <img src="{{ '/assets/azure-icon.png' | relative_url }}" alt="Azure logo" style="width: 80px; height: auto;">
               <img src="{{ '/assets/databricks-icon.png' | relative_url }}" alt="Data Lake logo" style="width: 35px; height: auto;">
             {%- elsif post.title contains "FaaS Service" -%}
-              <img src="{{ '/assets/nodejs-icon.png' | relative_url }}" alt="FaaS logo" style="width: 30px; height: auto;">  
-              <img src="{{ '/assets/micro-icon.png' | relative_url }}" alt="Serverless logo" style="width: 50px; height: auto;">
+              <img src="{{ '/assets/nodejs-icon.png' | relative_url }}" alt="FaaS logo" style="width: 30px; height: auto;margin-right: 15px;">  
+              <img src="{{ '/assets/micro-icon.png' | relative_url }}" alt="Serverless logo" style="width: 50px; height: auto;margin-right: 10px;">
               <img src="{{ '/assets/api-icon.png' | relative_url }}" alt="Serverless logo" style="width: 50px; height: auto;">
             {%- elsif post.title contains "Web Automation" -%}
-              <img src="{{ '/assets/gradle-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              <img src="{{ '/assets/gradle-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;margin-right: 10px;">  
               <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;">
             {%- elsif post.title contains "Data Lake On AWS" -%}
               <img src="{{ '/assets/aws-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
               <!-- <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;"> -->
             {%- elsif post.title contains "Using Paessler PRTG to Monitor Servers" -%}
-              <img src="{{ '/assets/image.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              <img src="{{ '/assets/prtg-icon.png' | relative_url }}" alt="FaaS logo" style="width: 85px; height: auto;">  
               <!-- <img src="{{ '/assets/javascript-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto;"> -->
-            {%- else -%}
+            {%- elsif post.title contains "Docker mailserver without Domain" -%}
+              <img src="{{ '/assets/smtp-icon.png' | relative_url }}" alt="FaaS logo" style="width: 50px; height: auto; margin-right: 20px;">    
+              <img src="{{ '/assets/docker-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">
+            {%- elsif post.title contains "Google Street View" -%}
+              <img src="{{ '/assets/google-icon.png' | relative_url }}" alt="FaaS logo" style="width: 100px; height: auto;">    
+              <img src="{{ '/assets/android-icon.png' | relative_url }}" alt="FaaS logo" style="width: 70px; height: auto;">  
+              {%- else -%}
               <!-- Íconos por defecto si no coincide con ningún proyecto específico -->
               <img src="{{ '/assets/default-icon.png' | relative_url }}" alt="Default logo" style="width: 40px; height: auto;">
             {%- endif -%}
