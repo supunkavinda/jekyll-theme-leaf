@@ -2,6 +2,7 @@ title: Juan's Website
 #iconURL: assets/image.png
 gifURL: assets/icons.gif
 #theme: jekyll-theme-leaf
+website-id: 12078
 
 # for a clean URL
 permalink: :slug
