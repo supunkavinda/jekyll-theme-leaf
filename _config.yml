@@ -2,7 +2,6 @@ title: Juan's Website
 #iconURL: assets/image.png
 gifURL: assets/icons.gif
 #theme: jekyll-theme-leaf
-website-id: 12078
 
 # for a clean URL
 permalink: :slug
@@ -16,5 +15,5 @@ plugins:
  - jekyll-seo-tag
 
 ### comments & analytics
-hyvor_talk_website_id: 14
+hyvor_talk_website_id: 12078
 google_analytics: UA-NNNNNNNN-N
